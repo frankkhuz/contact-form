@@ -20,8 +20,7 @@ function subitForm(e) {
   const serviceID = "service_18qi5so";
   const templateID = "template_hb920lp";
 
-  emailjs
-    .send(serviceID, templateID, params)
+  emailjs.send(serviceID, templateID, params)
     .then((res) => {
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
